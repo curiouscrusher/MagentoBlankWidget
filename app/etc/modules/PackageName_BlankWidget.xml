@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <PackageName_BlankWidget>
+            <active>true</active>
+            <codePool>local</codePool>
+            <!--
+              You need to add the widget image uploader extension
+              https://github.com/aijko/aijko-widgetimagechooser
+             -->
+            <depends>
+                <Aijko_WidgetImageChooser/>
+            </depends>
+        </PackageName_BlankWidget>
+    </modules>
+</config>

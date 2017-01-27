@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<widgets>
+    <packagename_blankwidget
+        type="packagename_blankwidget/blankwidget"
+        module="packagename_blankwidget"
+        translate="label description">
+
+        <name>Your Widget Name</name>
+        <description>Short description about your widget</description>
+
+        <parameters>
+
+            <image translate="label description">
+                <label>Image Upload</label>
+                <required>1</required>
+                <visible>1</visible>
+                <type>widgetimagechooser/chooser</type>
+                <sort_order>0</sort_order>
+                <description>Upload your image here.</description>
+            </image>
+
+            <title translate="label description">
+                <label>Widget Title</label>
+                <required>0</required>
+                <visible>1</visible>
+                <type>text</type>
+                <sort_order>10</sort_order>
+                <description>This is a text field.</description>
+            </title>
+
+            <content translate="label description">
+                <label>Widget Textarea</label>
+                <required>0</required>
+                <visible>1</visible>
+                <type>textarea</type>
+                <sort_order>20</sort_order>
+                <description>This is a textarea for extended content areas.</description>
+            </content>
+
+            <option translate="label comment">
+                <label>Dropdown Option Selection</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>select</type>
+                <values>
+                    <optionone translate="label">
+                        <value>optionone</value>
+                        <label>Option One</label>
+                    </optionone>
+                    <optiontwo translate="label">
+                        <value>optiontwo</value>
+                        <label>Option Two</label>
+                    </optiontwo>
+                    <optionthree translate="label">
+                        <value>optionthree</value>
+                        <label>Option Three</label>
+                    </optionthree>
+                </values>
+                <sort_order>30</sort_order>
+                <description>This is a dropdown menu for multiple options.</description>
+            </option>
+
+            <template>
+                <visible>0</visible>
+                <value>widgets/blankwidget.phtml</value>
+            </template>
+        </parameters>
+
+    </packagename_blankwidget>
+</widgets>

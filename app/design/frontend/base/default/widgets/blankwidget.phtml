@@ -1,0 +1,16 @@
+<?php $widgetContent = $this->getBlankwidgetContent(); ?>
+<?php if ($widgetContent[0] !== null): // Hide all content if image has not been uploaded ?>
+  <div class="blank-widget">
+    <div class="blank-widget__image">
+      <img src="<?php echo Mage::getBaseUrl('media') . $widgetContent[0]; ?>" alt="Widget Image"/>
+    </div>
+    <div class="blank-widget__content <?php echo $widgetContent[3]; // Option ?>">
+      <?php if ($widgetContent[1] !== null): ?>
+        <h2 class="blank-widget__content--title" ><?php echo $widgetContent[1]; // Title ?></h2>
+      <?php endif; ?>
+      <?php if ($widgetContent[2] !== null): ?>
+        <p class="blank-widget__content--paragraph" ><?php echo $widgetContent[2]; // Content ?></p>
+      <?php endif; ?>
+    </div>
+  </div>
+<?php endif; ?>
